@@ -2,9 +2,6 @@ import { Text, View, StyleSheet, Image, TouchableOpacity } from "react-native";
 import { useState } from "react";
 import { useLocalSearchParams } from "expo-router";
 import { compteurs } from "./"
-import image8 from "./Images TP2/argent.jpg"
-import imagePas8 from "./Images TP2/pleurer.jpg"
-
  
 
  export default function PageRichesse() {
@@ -25,7 +22,7 @@ import imagePas8 from "./Images TP2/pleurer.jpg"
  return (
     <View style={styles.container}>
       <Text style={styles.primaireTexte}>{text}</Text>
-      <Image source={image} style={{ width: 600, height: 400 }} />
+      <Image source={image} style={styles.image} />
        <Text style={styles.primaireTexte}>{textGain}</Text>
     </View>
   );
@@ -36,7 +33,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#00966C"
+    backgroundColor: "#00966C",
   },
   primaire: {
     backgroundColor: " #474C55",
@@ -49,5 +46,11 @@ const styles = StyleSheet.create({
     color: "#ffffff",
     fontSize: 16,
     fontWeight: 'bold',
-  }
+  },
+image:{
+   marginTop: 18,
+   marginBottom: 18,
+   width: 600,
+    height: 400 
+}
 });

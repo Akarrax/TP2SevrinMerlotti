@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#00966C"
   },
   primaire: {
-    backgroundColor: " #474C55",
+    backgroundColor: "#474C55",
     padding: 16,
     borderRadius: 10,
     alignItems: 'center',
